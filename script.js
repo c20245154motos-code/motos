@@ -3,10 +3,10 @@ console.log("Hello, World!");
 
 
 
-const myName = "Dominic D Motos";
-let age = 20; 
-const number = "09704625501";
-const address = "Brgy.6A, Victorias City, Negros Occidental";
+const myName = "Dominic Motos";
+let age = 20;
+const number = "638271709";
+const address = "Victorias City, Negros Occidental";
 
 
 
@@ -20,7 +20,7 @@ function greet(name) {
     return `Good morning, ${name}`;
 }
 
-console.log(greet(Motos));
+console.log(greet(`Rene`));
 
 
 function add (a,b) {
@@ -31,31 +31,60 @@ function mdas (num1,num2) {
     let d = num1 / num2;
     let a = num1 + num2;
     let s = num1 - num2;
-    return (`values: ${num1} and ${num2}, product: ${m}, quotient: ${d}, sum: ${a}, difference: ${s}`);
-    
+    return (`values: ${num1} and ${num2},\n product: ${m}, \n quotient: ${d}, \n sum: ${a}, \n difference: ${s}`);
+
     }
-   
-   console.log (mdas(5,3));
+   console.log (mdas(5,3)); 
 
 
 
 
-function add (a,b) {
-    return a + b;
-}
-function mdas (a,b) {
-    let sum = a + b;
-    let difference = a - b;
-    let product = a * b;
-    let quotient = a / b;
 
-    return (`values: ${num1} and ${num2}, product: ${m}, quotient: ${d}, sum: ${a}, difference: ${s}`);
-    
-    
-} 
-console.log(mdas(5,3));
+
+
+   // Query Selector
+const heading = document.querySelector("h1");
+console.log(heading);
 
 const contactHeading = document.querySelector("#contact h2");
 console.log(contactHeading);
+
+const projectsHeading = document.querySelector("#projects h2");
+console.log(projectsHeading);
 const servicesHeading = document.querySelector("#services h2");
 console.log(servicesHeading);
+
+//text Content
+heading.textContent = "My Portfolio";
+contactHeading.textContent = "lets connect";
+projectsHeading.textContent = "My Projects";
+servicesHeading.textContent = "My Services";
+
+//.style
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
+contactHeading.style.color = "purple";
+projectsHeading.style.color = "purple";
+servicesHeading.style.color = "purple";
+
+
+//Event Listeners
+heading.addEventListener("click", function() {
+    heading.style.color = "red";
+});
+
+const toggleButton = document.querySelector('#switch');
+const body = document.querySelector('body');
+let isOff = false;
+
+toggleButton.addEventListener("click", function() {
+    isOff = !isOff;
+
+    if (isOff) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+    }
+});
