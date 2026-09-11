@@ -4,7 +4,7 @@ console.log("Hello, World!");
 
 
 const myName = "Dominic D Motos";
-let age = 20;
+let age = 20; 
 const number = "09704625501";
 const address = "Brgy.6A, Victorias City, Negros Occidental";
 
