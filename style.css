@@ -83,7 +83,7 @@ form {
         color: blue;
     }
 }
-
+\\ HOVER EFFECTS \\
 nav {
     transition: color 0. 5s ease;
 }
@@ -102,9 +102,9 @@ button {
 
 }
   button:hover {
-    background-color: pink;
+    background-color: red;
     color: black;
-    
+
 
   }
  
