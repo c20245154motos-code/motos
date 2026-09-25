@@ -36,7 +36,11 @@ main section {
     padding: 20px
 }
 section[id="projects"]{
+<<<<<<< HEAD
     background-color: orange;
+=======
+    background-color: aqua;
+>>>>>>> cold-theme
 }
 form {
     display: flex;
